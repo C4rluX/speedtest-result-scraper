@@ -1,6 +1,6 @@
 {
   "name": "speedtest-result-scraper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple module to get information from a speedtest.com result ID by using web scraping.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -15,7 +15,10 @@
     "type": "git",
     "url": "git+https://github.com/C4rluX/speedtest-result-scraper.git"
   },
-  "keywords": ["speedtest", "scraper"],
+  "keywords": [
+    "speedtest",
+    "scraper"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
