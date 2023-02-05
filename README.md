@@ -8,7 +8,7 @@ Simple module to get information from a [speedtest.com](https://speedtest.net) r
 
     ```js
     // Using CommonJS
-    const { scraper } = require("speedtest-result-scraper").default;
+    const { scraper } = require("speedtest-result-scraper");
 
     // Using TypeScript or ESM
     import { scraper } from "speedtest-result-scraper";
