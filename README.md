@@ -19,7 +19,7 @@ Simple module to get information from a [speedtest.com](https://speedtest.net) r
     const result = await scraper(14311127665);
     console.log(result);
 
-    // Expected:
+    // Expected
     {
         date: 1675633163,
         id: '14311127665',
