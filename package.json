@@ -2,7 +2,8 @@
   "name": "speedtest-result-scraper",
   "version": "1.0.0",
   "description": "Simple module to get information from a speedtest.com result ID by using web scraping.",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib/**/*"
   ],

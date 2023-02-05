@@ -9,7 +9,7 @@ test("error when providing string that contains characters that are not numbers"
 });
 
 test("get null when the result id doesn't exists", async () => {
-    const data = await scrape("9999999999999999999999999");
+    const data = await scrape(new Array(100).fill("9").join(""));
     expect(data).toBeNull();
 });
 
