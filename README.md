@@ -8,20 +8,20 @@ Simple module to get information from a [speedtest.com](https://speedtest.net) r
 
     ```js
     // Using CommonJS
-    const { scraper } = require("speedtest-result-scraper");
+    const { scrape } = require("speedtest-result-scraper");
 
     // Using TypeScript or ESM
-    import { scraper } from "speedtest-result-scraper";
+    import { scrape } from "speedtest-result-scraper";
     ```
 
 2. Then, you just have to call it directly by passing the result ID as a number or string to get the information:
 
     ```js
     // Using promises
-    scraper(14311127665).then(result => console.log(result));
+    scrape(14311127665).then(result => console.log(result));
 
     // Using async/await
-    const result = await scraper(14311127665);
+    const result = await scrape(14311127665);
     console.log(result);
 
     // Expected
