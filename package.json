@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/C4rluX/speedtest-result-scraper.git"
   },
-  "keywords": [],
+  "keywords": ["speedtest", "scraper"],
   "author": "",
   "license": "ISC",
   "bugs": {
