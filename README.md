@@ -5,10 +5,15 @@ Simple module to get information from a [speedtest.com](https://speedtest.net) r
 # Usage
 
 1. First, import the module:
-   
-   ```js
-    const scraper = require("speedtest-result-scraper");
-   ```
+
+    ```js
+    // Using CommonJS
+    const { scraper } = require("speedtest-result-scraper").default;
+
+    // Using TypeScript or ESM
+    import { scraper } from "speedtest-result-scraper";
+    ```
+
 2. Then, you just have to call it directly by passing the result ID as a number or string to get the information:
 
     ```js
@@ -63,6 +68,7 @@ Simple module to get information from a [speedtest.com](https://speedtest.net) r
         hasSecondary: true
     }
     ```
+
 # API
 
 ```ts
@@ -100,8 +106,9 @@ interface SpeedtestResultData {
 }
 ```
 
- Get all of the information of a result ID from **speedtest.com**, using web scraping. Returns a **Promise** with the result, or **null** if it was not found.
- 
- Notes:
- -  The properties `download` and `upload` are in kilobytes.
- -  The properties `download_latency`, `upload_latency` and `idle_latency` are optional because old tests only had the property `latency` (this property is still present on recent tests anyways).
+Get all of the information of a result ID from **speedtest.com**, using web scraping. Returns a **Promise** with the result, or **null** if it was not found.
+
+Notes:
+
+-   The properties `download` and `upload` are in kilobytes.
+-   The properties `download_latency`, `upload_latency` and `idle_latency` are optional because old tests only had the property `latency` (this property is still present on recent tests anyways).

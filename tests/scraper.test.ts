@@ -1,4 +1,4 @@
-import scrape from "../src/index";
+import { scrape } from "../src/index";
 
 test("error when providing string that contains characters that are not numbers", async () => {
     try {

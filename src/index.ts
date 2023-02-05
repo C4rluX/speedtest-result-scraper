@@ -46,4 +46,4 @@ async function scrape(resultId: string | number): Promise<SpeedtestResultData | 
     return JSON.parse(found.slice(found.indexOf('{"'))).result;
 }
 
-export default scrape;
+export { scrape };
